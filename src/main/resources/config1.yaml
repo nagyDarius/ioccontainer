@@ -1,0 +1,11 @@
+beans:
+  - id: mf
+    class: org.dxworks.ioc.ioccontainer.movie.MovieFinder
+    properties:
+      - name: file
+        value: Movie File
+  - id: ml
+    class: org.dxworks.ioc.ioccontainer.movie.MovieLister
+    properties:
+      - name: finder
+        ref: mf
