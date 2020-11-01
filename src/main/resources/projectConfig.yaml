@@ -1,0 +1,15 @@
+beans:
+  - id: project1
+    class: org.dxworks.ioc.ioccontainer.project.Project
+    properties:
+      - name: owner
+        ref: bob
+      - name: value
+        value: 34
+  - id: bob
+    class: org.dxworks.ioc.ioccontainer.project.Owner
+    properties:
+      - name: name
+        value: bob
+      - name: project
+        ref: project1

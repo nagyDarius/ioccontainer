@@ -12,6 +12,7 @@ public class MovieFinder {
 		this.file = file;
     }
 
+    @Override
     public String toString() {
         return file;
     }

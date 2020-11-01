@@ -52,11 +52,11 @@ public class BeanFactory {
 			if (type.equals(String.class)) {
 				m = type.getDeclaredMethod(valueOf, Object.class);
 			} else if (type.equals(Integer.class)) {
-				m = type.getDeclaredMethod(valueOf, Object.class);
+				m = type.getDeclaredMethod(valueOf, String.class);
 			} else if (type.equals(Double.class)) {
-				m = type.getDeclaredMethod(valueOf, Object.class);
+				m = type.getDeclaredMethod(valueOf, String.class);
 			} else if (type.equals(Boolean.class)) {
-				m = type.getDeclaredMethod(valueOf, Object.class);
+				m = type.getDeclaredMethod(valueOf, String.class);
 			} else {
 				m = type.getDeclaredMethod(valueOf, Object.class);
 			}
